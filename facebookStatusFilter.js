@@ -47,17 +47,31 @@ function facebookStatusFilter()
 			}
 		}
 
-		var status = document.getElementsByClassName("userContent");
+		var status = document.getElementsByClassName("userContentWrapper");
 
 		var len = status.length;
 
 		for(var i=0; i<len; i++)
 		{
+			/*
 			if(this.isSpam(this.getText(status[i])))
 			{
 				status[i].parentNode.style.display = 'none';
 			}
+			*/
+
+			if(this.isSponsoredPost(status[i]))
+			{
+				status[i].style.display = 'none';
+			}
 		}
+	}
+
+	this.isSponsoredPost = function(obj)
+	{
+		var text = obj.innerText;
+		var pattern = new RegExp("(S|s)ponsored");
+		return pattern.test(text);
 	}
 
 
