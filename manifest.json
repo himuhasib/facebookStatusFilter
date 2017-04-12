@@ -5,7 +5,7 @@
 
 	"description": "Filter Facebook status based on trained data by YOU!",
 
-	"version": "1.0",
+	"version": "1.1",
 
 	"content_scripts": [
 		{
