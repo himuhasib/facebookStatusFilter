@@ -47,7 +47,7 @@ function facebookStatusFilter()
 			}
 		}
 
-		var status = document.getElementsByClassName("fbUserContent");
+		var status = document.getElementsByClassName("fbUserPost");
 
 		var len = status.length;
 
