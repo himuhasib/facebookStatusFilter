@@ -3,7 +3,7 @@ class FacebookStatusFilter
 	constructor() {
 		console.log("A watchful protector is watching over you. --Facebook Status Filter");
 		this.lastTimeExecuted = 0;
-		this.possibleStatusClassNames = ["fbUserContent", "fbUserPost", "fbUserStory"];
+		this.possibleStatusClassNames = ["fbUserContent", "fbUserPost", "fbUserStory", "userContentWrapper"];
 		this.statusClassName = "";
 		this.findProperClassName();
 	}
